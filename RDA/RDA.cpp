@@ -12,8 +12,6 @@
 #include "llvm/ADT/iterator_range.h"
 #include "llvm/IR/BasicBlock.h"
 
-#define PRINT  
-
 using namespace llvm;
 using namespace std;
 
