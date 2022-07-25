@@ -16,4 +16,4 @@ clean:
 	rm -f *.o *.so
 
 # first: make
-# second: opt -load ./RDA.so -RDA  < ../tests/sum.bc > /dev/null 2>../tests/sum_output.txt
+# second: opt -load ./RDA.so -RDA  < ../tests/sum.bc > /dev/null 2>../tests/sum_output_RDA.txt
