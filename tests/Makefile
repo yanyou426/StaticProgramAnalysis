@@ -1,4 +1,11 @@
-bc:
-	clang++ -c -emit-llvm easy.cpp -o easy.bc
-ll:
-	clang++ -S -emit-llvm easy.cpp -o easy.ll
+SRCS = sum.cpp easy.cpp
+TARGETS = $(SRCS:%.cpp=%)
+LLVM_CONFIG=-emit-llvm
+CXX=clang++
+
+all:
+	@for target in $(TARGETS);\
+	do \
+		$(CXX) -c $(LLVM_CONFIG) $$target.cpp -o $$target.bc;\
+	done
+
