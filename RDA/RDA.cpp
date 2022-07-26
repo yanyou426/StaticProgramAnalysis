@@ -122,17 +122,14 @@ namespace{
                 // }
                 // errs() << "\n";
 
-                //get the predecessor and union
-                BitVector tmp_in = inB[basicblock];
+                // get the predecessor and union
+                // BitVector tmp_in = inB[basicblock];
                 for(auto it = pred_begin(basicblock); it != pred_end(basicblock); it++){
                     BasicBlock* predecessor = *it;
                     inB[basicblock] |= outB[predecessor];                    
                 }
 
                 //there is no change in IN, we can skip the next part
-                if(inB[basicblock] == tmp_in){
-                    continue;
-                }
 
                 //outB = genB U (inB - killB)
                 for(int i = 0; i < inst_idx; i++){
