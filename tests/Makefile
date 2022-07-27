@@ -1,4 +1,4 @@
-SRCS = sum.cpp easy.cpp
+SRCS = sum.cpp easy.cpp exp.cpp
 TARGETS = $(SRCS:%.cpp=%)
 LLVM_CONFIG=-emit-llvm
 CXX=clang++
