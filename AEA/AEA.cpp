@@ -109,9 +109,7 @@ namespace{
                         // errs() << i << "\n";
                         tmp += getValueName(inst->getOperand(i));
                         if(i != inst->getNumOperands()-1){
-                            tmp += " ";
-                            tmp += opcode;
-                            tmp += " ";
+                            tmp += (" " + opcode + " ");
                         }        
                     }
                     if(ExpreToNumber.find(tmp) == ExpreToNumber.end()){
@@ -145,13 +143,11 @@ namespace{
                 string opcode = inst->getOpcodeName();
                 if(inst->isBinaryOp()){
                     string tmp = "";
-                    for(int i = 0; i< inst->getNumOperands();i++) {
+                    for(int i = 0; i < inst->getNumOperands(); i++) {
                         // errs() << i << "\n";
                         tmp += getValueName(inst->getOperand(i));
                         if(i != inst->getNumOperands()-1){
-                            tmp += " ";
-                            tmp += opcode;
-                            tmp += " ";
+                            tmp += (" " + opcode + " ");
                         }
                     }
                     if(ExpreToNumber.find(tmp) != ExpreToNumber.end())
