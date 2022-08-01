@@ -4,10 +4,10 @@
 
 ./LVA: implementation of live variable analysis
 
-./AEA: implementation of avaliable expression analysis
+./AEA: implementation of avaliable expression analysis (need more programs to check)
 
 ./tests: some example for the above algorithm
 
 ./tests/filename_output_*.txt: analysis result of filename.cpp via RDA/LVA/AEA/...
 
-need more programs to check
+./IPA: implementation of interprocedural analysis
