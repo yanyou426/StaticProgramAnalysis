@@ -1,0 +1,18 @@
+The pointer flow graph is: 
+
+The source value:   %3 = alloca %class.A*, align 8
+The target value:   %4 = alloca %class.A*, align 8; 
+
+
+
+The object of every value is: 
+
+The value:   %2 = alloca %class.A*, align 8
+The object: o_0; 
+The value:   %3 = alloca %class.A*, align 8
+The object: o_1; 
+The value:   %4 = alloca %class.A*, align 8
+The object: o_1; 
+
+
+

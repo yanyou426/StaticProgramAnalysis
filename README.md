@@ -11,3 +11,5 @@
 ./tests/filename_output_*.txt: analysis result of filename.cpp via RDA/LVA/AEA/...
 
 ./IPA: implementation of interprocedural analysis
+
+./PtrA: implementation of pointer analysis (with more situations to consider)
